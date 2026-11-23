@@ -106,3 +106,7 @@ Persist `data/` and `output/` as volumes, set `APP_PASSWORD`, and serve behind H
 ## Related
 
 An n8n version of this agent: https://github.com/safe51891-ai/Social-medai-agent-in-n8n
+
+## Author
+
+Built by [safe51891-ai](https://github.com/safe51891-ai).
