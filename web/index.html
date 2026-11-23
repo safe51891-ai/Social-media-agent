@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Media Agent</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Social Media Agent</h1>
+    <span id="health" class="muted"></span>
+  </header>
+
+  <main>
+    <aside>
+      <section class="card">
+        <h2>New run</h2>
+        <form id="new-run">
+          <label>Niche or topic
+            <input id="niche" required minlength="2" maxlength="200" placeholder="e.g. home coffee brewing">
+          </label>
+          <label>Video (optional, used for TikTok and YouTube)
+            <input id="video" type="file" accept="video/mp4,video/quicktime,video/webm">
+          </label>
+          <label class="check">
+            <input id="live" type="checkbox"> Publish for real after approval
+          </label>
+          <p id="mode-hint" class="hint">Dry run: drafts only. Nothing is posted.</p>
+          <button type="submit" class="primary">Start</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Runs</h2>
+        <ul id="runs" class="runs"></ul>
+      </section>
+    </aside>
+
+    <section id="detail" class="card">
+      <p class="muted">Start a run, or pick one from the list.</p>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>
